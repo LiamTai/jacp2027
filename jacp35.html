@@ -121,10 +121,10 @@
   .hero .meta b{font-weight:500;font-size:1.02rem}
   .hero .meta + .meta{margin-top:1.15rem}
   /* ECG pulse line */
-  .pulse{width:100%;height:34px;margin:1.8rem 0 0;opacity:.9}
+  .pulse{width:100%;height:54px;margin:1.6rem 0 0;opacity:.92}
   .pulse path{
-    fill:none;stroke:var(--aqua);stroke-width:2;
-    stroke-dasharray:1400;stroke-dashoffset:1400;
+    fill:none;stroke:var(--aqua);stroke-width:2;vector-effect:non-scaling-stroke;
+    stroke-dasharray:3000;stroke-dashoffset:3000;
     animation:trace 4s linear infinite;
   }
   @keyframes trace{to{stroke-dashoffset:0}}
@@ -291,8 +291,8 @@
         <div><small>大会長</small><b>柳田 俊彦 ・ 池谷 裕二</b></div>
         <div><small>当番幹事</small><b>西田 基宏（九州大学）</b></div>
       </div>
-      <svg class="pulse" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M0,20 L380,20 L400,20 L412,8 L426,32 L440,20 L470,20 L484,2 L500,38 L516,20 L820,20 L840,20 L852,9 L866,31 L880,20 L1200,20"/>
+      <svg class="pulse" viewBox="0 0 1200 100" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,50 L60,50 Q73,38 87,50 L108,50 L113,58 L119,2 L125,62 L129,50 L174,50 Q198,18 222,50 L300,50 Q313,38 327,50 L348,50 L353,58 L359,2 L365,62 L369,50 L414,50 Q438,18 462,50 L540,50 Q553,38 567,50 L588,50 L593,58 L599,2 L605,62 L609,50 L654,50 Q678,18 702,50 L780,50 Q793,38 807,50 L828,50 L833,58 L839,2 L845,62 L849,50 L894,50 Q918,18 942,50 L1020,50 Q1033,38 1047,50 L1068,50 L1073,58 L1079,2 L1085,62 L1089,50 L1134,50 Q1158,18 1182,50 L1200,50"/>
       </svg>
     </div>
   </div>
