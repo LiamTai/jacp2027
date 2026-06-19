@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プログラム ｜ 第37回 日本循環薬理学会学術集会</title>
+<meta name="description" content="第37回日本循環薬理学会学術集会 プログラムのご案内。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#F4F6F5;--paper-2:#FBFCFC;--ink:#16302D;--ink-soft:#3A514E;--teal:#0E5F58;--teal-deep:#0B4641;--aqua:#1AA89A;--mist:#E2EAE8;--line:#D3DEDC;--white:#fff;--maxw:1120px;--sb:248px;--serif:"Noto Serif JP",serif;--sans:"Noto Sans JP",system-ui,sans-serif}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  /* sidebar */
+  .sidebar{position:fixed;top:0;left:0;width:var(--sb);height:100vh;z-index:60;background:linear-gradient(180deg,#16302D 0%,#0E2B28 55%,#0B3A35 100%);color:#cfe0dd;display:flex;flex-direction:column;overflow-y:auto;border-right:1px solid rgba(255,255,255,.06)}
+  .sb-brand{display:block;padding:30px 26px 18px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .sb-brand b{display:block;font-family:var(--serif);color:#fff;font-weight:600;font-size:1.12rem;line-height:1.45;letter-spacing:.02em}
+  .sb-brand span{display:block;margin-top:.55rem;font-size:.61rem;letter-spacing:.2em;color:var(--aqua);font-weight:700}
+  .sb-pulse{height:16px;width:120px;margin-top:14px;opacity:.85}
+  .sb-pulse path{fill:none;stroke:var(--aqua);stroke-width:2;stroke-dasharray:1400;stroke-dashoffset:1400;animation:trace 4s linear infinite}
+  .sb-nav{display:flex;flex-direction:column;padding:12px 0;flex:1}
+  .sb-nav a{position:relative;padding:13px 26px;font-size:.92rem;font-weight:500;color:#bcd1cd;border-left:3px solid transparent;transition:background .2s,color .2s,border-color .2s}
+  .sb-nav a:hover{background:rgba(255,255,255,.05);color:#fff;border-left-color:var(--aqua)}
+  .sb-nav a.active{color:#fff;border-left-color:var(--aqua);background:rgba(26,168,154,.12)}
+  .sb-foot{padding:20px 26px;border-top:1px solid rgba(255,255,255,.08);font-size:.73rem;line-height:1.7;color:#8fb0ab}
+  .sb-foot a{color:var(--aqua);word-break:break-all}
+  .topbar{display:none;position:fixed;top:0;left:0;right:0;height:58px;z-index:55;background:rgba(18,42,39,.96);backdrop-filter:blur(8px);align-items:center;justify-content:space-between;padding:0 18px;color:#fff}
+  .topbar b{font-family:var(--serif);font-size:1rem;font-weight:600;letter-spacing:.02em}
+  .sb-toggle{background:none;border:0;cursor:pointer;padding:8px}
+  .sb-toggle span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;transition:.3s}
+  .sb-overlay{display:none;position:fixed;inset:0;background:rgba(8,24,22,.5);z-index:58}
+  .sb-overlay.open{display:block}
+  .content{margin-left:var(--sb)}
+  /* banner */
+  .banner{position:relative;background:linear-gradient(120deg,var(--teal-deep) 0%,var(--teal) 70%,#127c70 100%);color:#fff;padding:76px 0 66px;overflow:hidden}
+  .banner::after{content:"";position:absolute;right:-60px;bottom:-60px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(26,168,154,.45),transparent 70%)}
+  .banner .eyebrow{font-size:.72rem;letter-spacing:.32em;font-weight:700;color:#bfeee6;display:flex;align-items:center;gap:.7em;margin-bottom:1rem}
+  .banner .eyebrow::before{content:"";width:26px;height:1.5px;background:#bfeee6;display:inline-block}
+  .banner h1{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,4vw,2.6rem);letter-spacing:.03em;position:relative;z-index:2}
+  .crumb{margin-top:1.1rem;font-size:.82rem;color:#cdeae5;position:relative;z-index:2}
+  .crumb a{border-bottom:1px solid rgba(205,234,229,.5)}
+  .pulse{width:100%;height:30px;margin-top:1.4rem;opacity:.85;position:relative;z-index:2}
+  .pulse path{fill:none;stroke:#bfeee6;stroke-width:2;stroke-dasharray:1400;stroke-dashoffset:1400;animation:trace 4s linear infinite}
+  @keyframes trace{to{stroke-dashoffset:0}}
+  main{padding:72px 0 90px}
+  .prep{background:var(--white);border:1px dashed var(--line);border-radius:8px;padding:56px 40px;text-align:center;color:var(--ink-soft)}
+  .prep .label{font-family:var(--serif);font-size:1.5rem;color:var(--teal);margin-bottom:.5rem}
+  .prep small{font-size:.92rem;display:block;max-width:34em;margin:0 auto}
+  .backlink{display:inline-block;margin-top:30px;font-size:.9rem;color:var(--teal);border-bottom:1px solid var(--aqua);font-weight:500}
+  footer.site{background:var(--ink);color:#cfe0dd;padding:48px 0 30px}
+  footer .fnav{display:flex;flex-wrap:wrap;gap:14px 22px;font-size:.86rem;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.12)}
+  footer .fnav a:hover{color:#fff}
+  footer .copy{font-size:.76rem;color:#8fa9a5;margin-top:20px;letter-spacing:.04em}
+  @media(max-width:980px){
+    .topbar{display:flex}
+    .sidebar{width:284px;transform:translateX(-100%);transition:transform .3s ease}
+    .sidebar.open{transform:none;box-shadow:0 0 48px rgba(0,0,0,.45)}
+    .content{margin-left:0;padding-top:58px}
+  }
+  @media(prefers-reduced-motion:reduce){.pulse path,.sb-pulse path{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<aside class="sidebar" id="sidebar">
+  <a class="sb-brand" href="jacp35.html#top">
+    <b>第37回<br>日本循環薬理学会<br>学術集会</b>
+    <span>JACP 2027 ・ MIYAZAKI</span>
+    <svg class="sb-pulse" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0,20 L520,20 L560,20 L584,4 L612,36 L640,20 L1200,20"/></svg>
+  </a>
+  <nav class="sb-nav">
+    <a href="jacp35.html#greeting">ご挨拶</a>
+    <a href="jacp35.html#overview">開催概要</a>
+    <a href="program.html" class="active">プログラム</a>
+    <a href="registration.html">参加登録</a>
+    <a href="abstract.html">演題登録</a>
+    <a href="jacp35.html#access">会場・アクセス</a>
+    <a href="jacp35.html#sponsor">協賛・展示</a>
+    <a href="jacp35.html#contact">お問い合わせ</a>
+  </nav>
+  <div class="sb-foot">
+    九州大学大学院薬学研究院 生理学分野<br>
+    <a href="https://physiology.phar.kyushu-u.ac.jp/" target="_blank" rel="noopener">physiology.phar.kyushu-u.ac.jp</a>
+  </div>
+</aside>
+<div class="sb-overlay" id="sbOverlay"></div>
+<header class="topbar">
+  <b>第37回 日本循環薬理学会</b>
+  <button class="sb-toggle" id="sbToggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<div class="content">
+  <section class="banner">
+    <div class="wrap">
+      <div class="eyebrow">Program ・ プログラム</div>
+      <h1>プログラム</h1>
+      <div class="crumb"><a href="jacp35.html#top">TOP</a> ／ プログラム</div>
+      <svg class="pulse" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0,20 L380,20 L400,20 L412,8 L426,32 L440,20 L470,20 L484,2 L500,38 L516,20 L820,20 L840,20 L852,9 L866,31 L880,20 L1200,20"/></svg>
+    </div>
+  </section>
+
+  <main>
+    <div class="wrap">
+      <div class="prep">
+        <div class="label">準備中</div>
+        <small>特別講演・シンポジウム・一般演題などのプログラムは、準備が整い次第こちらに掲載いたします。今しばらくお待ちください。</small>
+      </div>
+      <a class="backlink" href="jacp35.html#top">← トップページへ戻る</a>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <nav class="fnav">
+        <a href="jacp35.html#greeting">ご挨拶</a>
+        <a href="jacp35.html#overview">開催概要</a>
+        <a href="program.html">プログラム</a>
+        <a href="registration.html">参加登録</a>
+        <a href="abstract.html">演題登録</a>
+        <a href="jacp35.html#access">会場・アクセス</a>
+        <a href="jacp35.html#sponsor">協賛・展示</a>
+        <a href="jacp35.html#contact">お問い合わせ</a>
+      </nav>
+      <p class="copy">© 第37回日本循環薬理学会学術集会 ／ 第15回看護理工学会学術集会・看護薬理カンファレンス2027（合同大会）</p>
+    </div>
+  </footer>
+</div>
+
+<script>
+  const tog=document.getElementById('sbToggle'),sb=document.getElementById('sidebar'),ov=document.getElementById('sbOverlay');
+  function closeSb(){sb.classList.remove('open');ov.classList.remove('open');tog.setAttribute('aria-expanded',false);}
+  tog.addEventListener('click',()=>{const o=sb.classList.toggle('open');ov.classList.toggle('open',o);tog.setAttribute('aria-expanded',o);});
+  ov.addEventListener('click',closeSb);
+</script>
+</body>
+</html>
